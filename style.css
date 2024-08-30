@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+}
+
+.page-1 {
+  background-image: url(/image.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #fcd201;
+}
+
+.header-nav-container {
+  margin-left: 85px;
+  padding-top: 20px;
+  display: flex;
+}
+
+.img-header-nav-container {
+  width: 120px;
+}
+
+.button-header-nav-container {
+  margin-left: 1000px;
+  margin-top: 3px;
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.button-text-1 {
+  width: 135px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #3a10e5;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.button-text-2 {
+  width: 125px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.text-container-header-nav {
+  margin-left: 84px;
+  margin-top: 130px;
+  line-height: 80px;
+  display: flex;
+}
+.p-text-prove {
+  font-size: 60px;
+  white-space: pre-line;
+  font-weight: 700;
+  color: #43404e;
+}
+.p-text-nearly {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 30px;
+  white-space: pre-line;
+  margin-top: 90px;
+  z-index: 2;
+}
+.button-to-begin {
+  width: 220px;
+  height: 60px;
+  margin-top: px;
+  color: white;
+  cursor: pointer;
+  background: radial-gradient(
+    circle,
+    rgba(203, 64, 128, 1),
+    rgba(201, 61, 125, 1),
+    rgba(189, 49, 114, 1),
+    rgba(173, 30, 96, 1)
+  );
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 34px;
+  border-radius: 70px 70px 50px 50px;
+  box-shadow: 4px -5px 0px 0px rgba(255, 204, 191, 0.68) inset;
+}
+
+.position-hat-11 {
+}
+
+.position-hat-12 {
+  margin-top: 100px;
+  margin-right: 100px;
+  z-index: 1;
+  position: absolute;
+  top: 1px;
+  right: 280px;
+  width: 270px;
+  animation: moveUpDown 4s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

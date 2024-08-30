@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fcd201;
+}
+
+#create-survey {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.test-container-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  width: calc(100% - 22px);
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 135px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #3a10e5;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #1f0685;
+}
+
+#test-container,
+#result-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+#survey-list {
+  overflow-x: auto;
+  margin-top: 40px;
+}
+
+#surveys-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 0;
+}
+
+.survey-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.survey-item h3 {
+  margin: 0 0 10px;
+}
+
+.survey-item ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.survey-item li {
+  margin-bottom: 10px;
+}
+
+#test-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.test-question {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.option-button:hover {
+  background-color: #555;
+}
+
+.option-button.selected {
+  background-color: #007bff;
+}
+
+.position-hatppp {
+  margin-top: 100px;
+  margin-right: 100px;
+  z-index: -1;
+  position: absolute;
+  left: 950px;
+  width: 600px;
+  filter: blur(8px);
+}
+
+.position-hatpp {
+  margin-top: 100px;
+  margin-right: 100px;
+  z-index: -1;
+  filter: blur(8px);
+  position: absolute;
+  right: 180px;
+  width: 270px;
+  bottom: 400px;
+  animation: moveUpDown 4s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.position-hatpppp {
+    z-index: -1;
+    filter: blur(8px);
+    position: absolute;
+    left: 90px;
+    top: 150px;
+}
